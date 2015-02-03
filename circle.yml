@@ -9,6 +9,7 @@ machine:
 dependencies:
  pre:
   - echo y|android update sdk -u -a -t 4
+ override:
 test:
  override:
   - chmod +x gradlew
