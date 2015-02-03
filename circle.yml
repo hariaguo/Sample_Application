@@ -1,0 +1,19 @@
+general:
+artifacts:
+-"app/build/outputs/apk/app-release.apk"
+machine:
+java:
+version: 1.7.0_75
+environment:
+ANDROID_HOME:/usr/local/android-sdk-linux
+dependencies:
+override:
+- echo y|android update sdk -u -a -t 6,104
+test:
+override:
+- chmod +x gradlew
+deployment:
+master:
+branch: master
+commands:
+- ./gradlew assembleDebug	
