@@ -8,7 +8,9 @@ machine:
   ANDROID_HOME: /usr/local/android-sdk-linux
 dependencies:
  override:
-  - echo y|android update sdk -u -a -t 6,104
+  - echo y|android update sdk --no-ui --filter "build-tools-21.1.1"
+  gradle:
+   version: 2.2.1
 test:
  override:
   - chmod +x gradlew
