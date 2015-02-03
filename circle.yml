@@ -3,7 +3,7 @@ general:
   - "app/build/outputs/apk/app-release.apk"
 machine:
  java:
-  version: Oracle JDK 7
+  version: openjdk7
  environment:
   ANDROID_HOME: /usr/local/android-sdk-linux
 dependencies:
