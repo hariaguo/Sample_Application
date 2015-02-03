@@ -10,4 +10,14 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
     public ApplicationTest() {
         super(Application.class);
     }
+
+    public void testOnClickBtn() {
+        assertTrue(true);
+    }
+
+
+    public void testOnClickBtn2() {
+
+        assertTrue(false);
+    }
 }
