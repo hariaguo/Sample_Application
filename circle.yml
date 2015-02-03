@@ -7,8 +7,9 @@ machine:
  environment:
   ANDROID_HOME: /usr/local/android-sdk-linux
 dependencies:
- pre:
-  - echo y|android update sdk -u -a -t 4
+ override:
+  pre:
+   - echo y|android update sdk -u -a -t 4
 test:
  override:
   - chmod +x gradlew
