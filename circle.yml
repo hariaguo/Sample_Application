@@ -8,9 +8,9 @@ machine:
   ANDROID_HOME: /usr/local/android-sdk-linux
 dependencies:
  override:
-  - echo y|android update sdk -u -a -t 4
   gradle:
    version: 2.2.1
+  - echo y|android update sdk -u -a -t "4" 
 test:
  override:
   - chmod +x gradlew
