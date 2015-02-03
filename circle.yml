@@ -1,6 +1,6 @@
 general:
 artifacts:
--"app/build/outputs/apk/app-release.apk"
+- "app/build/outputs/apk/app-release.apk"
 machine:
 java:
 version: 1.7.0_75
