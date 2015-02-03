@@ -4,14 +4,13 @@ general:
 machine:
  java:
   version: openjdk7
+ gradle:
+  version: 2.2.1
  environment:
   ANDROID_HOME: /usr/local/android-sdk-linux
 dependencies:
  pre:
   - echo y|android update sdk -u -a -t 4
- override:
-  - gradle:
-   version: 2.2.1
 test:
  override:
   - chmod +x gradlew
