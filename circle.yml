@@ -16,5 +16,5 @@ deployment:
  master:
   branch: master
   commands:
-   - ./gradlew assembleDebug	
    - ./gradlew build	
+   - ./gradlew connectedAndroidTest
